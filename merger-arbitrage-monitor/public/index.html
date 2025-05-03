@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merger Arbitrage Monitor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h1>M|A|M</h1>
+                <p class="subtitle">Merger Arbitrage Monitor</p>
+            </div>
+            <div class="sidebar-content">
+                <div class="metrics-card">
+                    <h3>Overview</h3>
+                    <div class="metric">
+                        <span class="metric-label">Active Deals</span>
+                        <span class="metric-value" id="activeDealCount">0</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Total Deal Value</span>
+                        <span class="metric-value" id="totalValue">$0B</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Average Spread</span>
+                        <span class="metric-value" id="avgSpread">0%</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Target Company</th>
+                                <th>Acquirer</th>
+                                <th>Offer Price</th>
+                                <th>Current Price</th>
+                                <th>Spread (%)</th>
+                                <th>Status</th>
+                                <th>Expected Close</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mergerData">
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
